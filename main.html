@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-[1536px] h-[100px] mx-auto mt-5">
+        <nav class="flex justify-between items-center bg-white p-4 rounded-lg shadow">
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="" class="w-8 h-8">
+                <h1 class="text-3xl">Dev<span class="text-3xl font-bold">Board</span></h1>
+            </div>
+            <button id="previous-page" class=" text-white border border-blue-400 bg-blue-700 p-2 rounded-lg">Back To Desk</button>
+        </nav>
+    </header>
+   <section class="w-[1536px] h-[100px] mx-auto mt-5">
+    <div class="border border-grey rounded-lg w-[1536px] h-[100px] p-4">
+         <h1 class="text-4xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+         <hr>
+         <p class="text-xl font-semibold">There are different ways to select element in dom.They are getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll</p>
+    </div>
+    <div class="border border-grey rounded-lg w-[1536px] h-[100px] p-4">
+        <h1 class="text-4xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+        <hr>
+        <p class="text-xl font-semibold"> innerText shows only visible text, innerHTML shows only all HTML tags and elements,textContent shows all text and hidden text also </p>   
+    </div>
+    <div class="border border-grey rounded-lg w-[1536px] h-[100px] p-4">
+        <h1 class="text-4xl font-bold">Question-3: What is event delegation in the DOM?</h1>
+        <hr>
+        <p class="text-xl font-semibold">Adding multiple event addEvenListener in child element is call event delegation </p> 
+    </div>
+    <div class="border border-grey rounded-lg w-[1536px] h-[100px] p-4">
+        <h1 class="text-4xl font-bold">Question-4: What is event bubbling in the DOM?</h1>
+        <hr>
+        <p class="text-xl font-semibold">Event Bubbling is a concept where a event starts from parent element to step by step child element and it again returns from child to parent element</p> 
+    </div>
+    <div class="border border-grey rounded-lg w-[1536px] h-[100px] p-4">
+        <h1 class="text-4xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+        <hr>
+        <p class="text-xl font-semibold"> I can use .createElement() for create, for add use .appendChild() and for remove can use .removeChild() </p> 
+    </div>
+   </section>
+   <script src="script/main.js"></script>
+</body>
+</html>
