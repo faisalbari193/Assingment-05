@@ -19,6 +19,17 @@ for (let button of buttons) {
         const p = document.createElement('p');
         p.innerText = 'you have completed this task.';
         status.appendChild(p);
+        function updateDate() {
+            const dateElement = document.getElementById("dateElement");
+            const today = new Date();
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            const month = monthNames[today.getMonth()]; 
+            const day = today.getDate(); 
+            const year = today.getFullYear(); 
+        
+            dateElement.innerText = `${month}:${day}:${year}`;
+        }
+        updateDate();
         const numberOneElement = document.getElementById('number-one');
         const numberOne = numberOneElement.innerText; 
         const convertedNumberOne = parseInt(numberOne);
