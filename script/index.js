@@ -1,5 +1,5 @@
 document.getElementById('next-page').addEventListener('click', function(){
-    window.location.href = '../main.html';
+    window.location.href = 'main.html';
 })
 document.getElementById('status-clean').addEventListener('click',function(){
     document.getElementById('status').style.display = 'none';
