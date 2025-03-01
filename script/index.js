@@ -1,10 +1,6 @@
 document.getElementById('next-page').addEventListener('click', function(){
     window.location.href = 'main.html';
 })
-document.getElementById('status-clean').addEventListener('click',function(){
-    document.getElementById('status').style.display = 'none';
-});
-
 const buttons = document.querySelectorAll('.completed-btn');
 for (let button of buttons) {
     button.addEventListener('click', function() {
@@ -19,6 +15,9 @@ for (let button of buttons) {
         const p = document.createElement('p');
         p.innerText = 'you have completed this task.';
         status.appendChild(p);
+        document.getElementById('status-clean').addEventListener('click',function(){
+            status.removeChild(p);
+       });
         function updateDate() {
             const dateElement = document.getElementById("dateElement");
             const today = new Date();
